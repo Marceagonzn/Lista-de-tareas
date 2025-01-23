@@ -1,0 +1,151 @@
+:root {
+    --primary: #ffd764;
+    --secundary: #eb6e3d;
+    --dark: #2d2b36;
+    --light: #f2eff1;
+    --diabled:#e7e7e7;
+    --background: #17181d;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+    color: var(--diabled);
+    overflow: hidden;
+}
+
+#particles-js{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+
+
+*:first-letter{
+    text-transform: capitalize;
+}
+
+.roundBorder{
+    border-radius: 5px;
+    position: relative;
+    z-index: 99;
+}
+
+.list {
+    margin: 0;
+    padding: 25px;
+    background-color: var(--dark);
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.dateRight {
+    display: flex;
+    align-items: center;
+}
+
+#dateNumber {
+    font-size: 50px;
+}
+
+#dateText {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#dateMonth,
+#dateNumber,
+#dateText {
+    font-weight: bold;
+}
+
+#dateMonth,
+#dateYear {
+    margin-left: 7px;
+    font-size: 20px;
+}
+
+#clock {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 15px;
+    color: var(--light);
+}
+
+form {
+    margin: 20px 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 35px auto;
+    grid-column-gap: 15px;
+}
+
+input {
+    border: none;
+    padding-left: 10px;
+    background-color: var(--diabled);
+}
+
+input:focus {
+    outline: none;
+}
+
+.addTaskButton,
+.orderButton {
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.addTaskButton{
+    height: 35px;
+    border-radius: 50%;
+    font-size: 18px;
+    background-color: var(--secundary);
+}
+
+
+.task{
+    background-color: var(--primary);
+    padding: 15px;
+    margin-top: 15px;
+    color: var(--dark);
+    cursor: pointer;
+}
+
+.done {
+    background-color: var(--diabled);
+    text-decoration: line-through;
+    color: var(--dark);
+}
+
+@keyframes fadeOutLeft {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+
+.fade-out {
+    animation: fadeOutLeft 0.5s forwards; /* Duration of 0.5 seconds */
+}
