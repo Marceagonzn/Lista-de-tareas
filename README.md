@@ -19,6 +19,6 @@ Delete tasks: Users can remove completed or unwanted tasks from the list.
 
 ## Screenshots
 
-![Screenshot](screenshot/scree1.gif)
+![Screenshot](screenshot/screen1.gif)
 
 ![Screenshot](screenshot/scree2.jpg)
